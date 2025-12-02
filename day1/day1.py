@@ -1,4 +1,4 @@
-with open("day1/input.txt", "r") as file:
+with open("day1/sample.txt", "r") as file:
     pos = 50
     part1 = 0
     part2 = 0
