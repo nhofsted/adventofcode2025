@@ -1,6 +1,6 @@
 part1 = 0
 ranges = []
-with open("day5/sample.txt", "r") as file:
+with open("day5/Sample.txt", "r") as file:
     readingRanges = True
     for line in file:
         line = line.strip()
@@ -22,7 +22,7 @@ for r in ranges:
     if r.start >= index:
         part2 += len(r)
         index = r.stop
-    elif r.start < index and index < r.stop:
+    elif index < r.stop:
         part2 += len(r) - index + r.start
         index = r.stop
 print("part 2:", part2)
